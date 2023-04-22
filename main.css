@@ -1,0 +1,228 @@
+body{
+    font-family: Roboto, Arial;
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 94px;
+    padding-right: 24px;
+    padding-bottom: 40px;
+    background-color: rgb(247, 247, 247);
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* thumbnail 1*/
+.thumbnail{
+    width: 100%;
+    cursor: pointer;
+}
+
+.video-title{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-picture{
+    width: 36px;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+.thumbnail-row{
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.video-author,
+.video-stats{
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+    width: 200px;
+}
+
+.video-author{
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+.video-time{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 4px;
+    border-radius: 2px;
+}
+
+/*HEADER*/
+.header{
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+    width: 263px;
+}
+.hamburger-menu{
+    height: 24px;
+    margin-right: 24px;
+    margin-left: 24px;
+    cursor: pointer;
+}
+.youtube-logo{
+    height: 20px;
+}
+
+.middle-section{
+    display: flex;
+    flex: 1;
+    margin-left: 60px;
+    margin-right: 32px;
+    max-width: 470px;
+    align-items: center;
+}
+.search-bar{
+    flex: 1;
+    height: 36px;
+    padding-left: 12px;
+    min-width: 0;
+    font-size: 16px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 2px;
+    box-shadow: inset 0px 1px 2px rgb(238, 238, 238);
+}
+.search-bar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+.search-button{
+    height: 40px;
+    width: 64px;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(204, 204, 204);
+    margin-left: -1px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.search-icon{
+    height: 24px;
+    margin-top: 4px;
+}
+.voice-search-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+}
+.voice-search-icon{
+    height: 24px;
+    margin-top: 4px;
+}
+
+.right-section{
+    display: flex;
+    width: 180px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+.upload-icon{
+    height: 24px;
+    cursor: pointer;
+}
+.youtube-apps-icon{
+    height: 24px;
+    cursor: pointer;
+}
+.notifications-icon{
+    height: 24px;
+}
+.notifications-icon-container{
+    position: relative;
+    cursor: pointer;
+}
+.notifications-count{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(204, 0, 0);
+    font-size: 10px;
+    color: white;
+    border: 2px solid white;
+    padding: 2px 5px;
+    border-radius: 80px;
+    top: -3px;
+    right: -7px;
+}
+.current-user-picture{
+    height: 32px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+/*END OF HEADER*/
+
+/*SIDEBAR*/
+.sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+}
+.sidebar-link{
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sidebar-link:hover{
+    background-color: rgb(241, 240, 240);
+    cursor: pointer;
+}
+.sidebar-link img{
+    height: 24px;
+    margin-bottom: 5px;
+}
+.sidebar-link div{
+    font-size: 10px;
+}
